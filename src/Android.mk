@@ -49,7 +49,7 @@ LOCAL_SRC_FILES := gtest-all.cc
 
 LOCAL_C_INCLUDES := $(libgtest_host_includes)
 
-LOCAL_CFLAGS += -O0
+LOCAL_CFLAGS += -O0 -fpermissive
 
 LOCAL_MODULE := libgtest_host
 LOCAL_MODULE_TAGS := eng
@@ -67,7 +67,7 @@ LOCAL_SRC_FILES := gtest_main.cc
 
 LOCAL_C_INCLUDES := $(libgtest_host_includes)
 
-LOCAL_CFLAGS += -O0
+LOCAL_CFLAGS += -O0 -fpermissive
 
 LOCAL_STATIC_LIBRARIES := libgtest
 
